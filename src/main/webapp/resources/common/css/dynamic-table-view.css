@@ -1,0 +1,77 @@
+
+
+
+
+div.dyn-table-container div.dyn-table-header {
+	
+		margin-top:40px;
+	
+		background-color: #F3F3F4;
+
+		border: 0.1px solid #d7d7d7;
+		
+		border-radius: 5px;
+		
+		border-bottom-left-radius:0px;
+		
+		border-bottom-right-radius:0px;
+	
+		height: 100px;
+}
+
+
+div.dyn-table-container div.dyn-table-header > div.dyn-table-header-content{
+	
+	float: left;
+	
+	text-align: center;
+	
+	height:100px;
+	
+	width: 16.6%;
+
+
+}
+
+div.dyn-table-container div.dyn-table-header > div.dyn-table-header-content span {
+	
+	display: block;
+	
+	margin-top: 40px;
+	
+	text-transform: uppercase;
+	
+	font-weight: bolder;
+	
+	
+}
+
+
+div.dyn-table-container  div.dyn-table-header::after{
+	
+	/*Float gryzie sie z objeciem dooko³a przez bstrom-header divów dzieci dlatego trzeba na pseudo elemencie ::after dac taki kod*/ 
+	
+	     content:'';
+	     
+         display:block;
+         
+         clear: both;
+	
+}
+
+
+
+div.dyn-table-container div.table-body-info{
+	
+	
+	height:auto;
+	
+	border-style: solid;
+	
+	border-color: #d6d6d6;
+	
+	border-width: 0.4px;
+	
+	border-top-width: 0px;
+	
+}

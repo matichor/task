@@ -1,0 +1,97 @@
+div.header-section{
+	
+			margin-top: 0px;
+			
+			margin-left: 245px;
+			
+			background-color: #F3F3F4;
+			
+			height:40px;
+			
+			
+			/*min-width: 500px;*/
+	
+	
+}
+
+
+div.header-section > div.header-title{
+
+	float:left;
+	
+	height:40px;	
+	
+	padding: 10px 0px 0px 20px;
+}
+
+
+div.header-section > div.header-title > span.header-title-set{
+
+	
+	font-size: 14px;
+		
+	font-style: normal;
+	
+	letter-spacing: 0.1em;
+	
+	font-variant: normal;
+	
+	font-weight: 500;
+	
+	line-height: 15.4px;
+	
+	font-family: 'Arial Black';
+	
+	color: #858585;
+	
+	
+}
+
+div.header-section > div.header-log {
+	
+	margin: 7px 0px 0px 0px;
+	
+	float:right;
+	
+	width: 10%;
+	
+	height:40px;
+
+	
+}
+
+
+div.header-section > div.header-log > div.header-logout  {
+	
+		height:30px;
+		
+		background-image: url("../img/logout_small.png");
+	
+		background-repeat: no-repeat;
+		
+		cursor: pointer;
+		
+		
+}
+
+div.header-section > div.header-log > div.header-logout > span.header-logout-text{
+	
+	margin: 10px 0px 0px 30px;
+
+	font-size: 14px;
+		
+	font-style: normal;
+	
+	font-variant: normal;
+	
+	font-weight: 500;
+	
+	line-height: 25px;
+	
+	font-family: 'Arial Black';
+	
+	color: #400040;
+	
+}
+
+

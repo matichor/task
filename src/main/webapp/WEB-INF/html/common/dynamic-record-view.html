@@ -1,0 +1,32 @@
+<article>
+<div class="table-record-info">
+
+		<div class="table-record-column" ng-repeat="column in vm.columnData track by $index">
+		
+		
+			<div ng-if="isEditable(column)">
+					
+					<textarea rows="4" cols="10" ng-model="vm.itemRecord[column.mapping]"></textarea>
+						
+			</div>
+		
+			<div style="margin: 10px 0px 0px 20px;" ng-if="isReadable(column)">
+			
+				<span>{{vm.itemRecord[column.mapping]}}</span>
+				
+			</div>
+		
+			<div class="table-button-action-panel" style="margin: 40px 0px 0px 10px;" ng-if="isActionColumn(column.mapping)">
+				<input class="table-action" type="button" value="Edycja" ng-click="modify()" ng-if="canBeModify()" />
+				<input class="table-action" type="button" value="Zapisz" ng-click= "save()" ng-if="canBeSave()"/>
+				<input class="table-action" type="button" value="Anuluj" ng-click="cancel()"  ng-if="canBeCancel()"/>
+			</div>
+			
+
+			
+		</div>
+</div>
+
+</article>
+
+<hr/>

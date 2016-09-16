@@ -1,0 +1,217 @@
+
+div.login-container{
+	position:absolute;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	width:100%;
+	height:100%;
+	background-image:url("../img/astrapark.jpg");
+	background-size: cover;
+	overflow-y: hidden;
+	z-index: 0
+}
+
+
+
+
+div.login-app-title{
+	position:absolute;
+	top: calc(50% - 35px);
+	left: calc(50% - 500px);
+	font-size:70px;
+}
+
+
+div.login-app-title > div {
+	
+	font-family: 'Exo', sans-serif;
+	color:#FFFFFF;
+	
+}
+
+div.login-app-title > div > span {
+	
+	color: #5379fa !important;
+}
+
+div.login-box{
+	
+	position: absolute;
+	top: calc(50% - 75px);
+	left: calc(50% - 75px);
+	height:230px;
+	width:350px;
+	padding:10px;
+	z-index: 1;
+	border-style:solid;
+  	border-color:white;
+  	border-width:2px;
+	
+}
+
+div.login-box > select {
+	
+	width:352px;
+	height:30px;
+	background: transparent;
+	color: #fff;
+	font-family:Arial;
+	font-size:16px;
+	padding:5px;
+	font-weight: 400;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	
+}
+
+div.login-box > select:FOCUS{
+	
+	outline: none;
+	
+}
+
+div.login-box > select > option	{
+	
+	background-color: #2F4050;
+}
+
+
+div.login-box > select > option	:FOCUS{
+	
+	outline: none;
+}
+
+div.login-box > input[type=text]{
+	margin-top:20px;
+	width:340px;
+	height:30px;
+	background: transparent;
+	color: #fff;
+	font-family:Arial;
+	font-size:16px;
+	padding:5px;
+	font-weight: 400;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+}
+
+div.login-box > input[type=password]{
+	width:340px;
+	height:30px;
+	background: transparent;
+	color: #fff;
+	font-family:Arial;
+	font-size:16px;
+	padding:5px;
+	font-weight: 400;
+	margin-right:10px;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+}
+
+
+div.login-box > input[type=text]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+
+div.login-box > input[type=button]{
+	width: 350px;
+	height: 35px;
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #a18d6c;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 5px;
+	margin-top: 20px;
+}
+
+div.login-box > label{
+	
+	vertical-align:2px;
+	color: #ffffff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding-right: 7px;
+}
+
+
+div.login-loading{
+	position: absolute;
+	top: calc(50% - 75px);
+	left: calc(50% - 75px);
+	height:230px;
+	width:350px;
+	padding:10px;
+	z-index: 1;
+	border-style:solid;
+  	border-color:white;
+  	border-width:2px;
+  	background-color: rgba( 0, 0, 0, 0.5 ) ;
+}
+
+
+@keyframes spin{
+	from { transform: rotate(0deg);   opacity: 0.2; }
+	50%  { transform: rotate(180deg); opacity: 1.0; }
+	to   { transform: rotate(360deg); opacity: 0.2; }
+}
+
+div.login-loading > div.ajax-authentication-loader{
+	top: calc(50% - 30px);
+	left: calc(50% - 30px);
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border: 8px solid #fff;
+	border-right-color: transparent;
+	border-radius: 50%;
+	box-shadow: 0 0 25px 2px #eee;
+}
+
+div.login-loading > div.ajax-authentication-loader{
+	
+	animation: spin 1s linear infinite;
+	
+}
+
+div.login-msg-error
+{
+	top: calc(50% + 200px);
+	left: calc(50% - 70px);
+	position: absolute;
+	
+    bottom:120%;
+    background: #dd2d2d;
+    color:#ffffff;
+    border-radius: 5px;
+    padding:5px;
+    width: 350px;
+    height: 50px;
+
+}
+
+
+
+div.login-msg-error:before
+{
+	position: absolute;
+    content: ".";
+    color:transparent;
+    position: absolute;
+    top: -20%;
+    left:20px;
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid #dd2d2d;
+}
+

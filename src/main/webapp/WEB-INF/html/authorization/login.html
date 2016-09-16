@@ -1,0 +1,17 @@
+	<div class="login-container" ></div>
+		<div class="login-app-title">
+			<div>VO<span>LA</span>NTO</div>
+		</div>
+		<div class="login-box">
+			<input type="text" placeholder="U¿ytkownik" ng-model="logCtrl.login"/>	
+			<input type="password" placeholder="Has³o" ng-model="logCtrl.password"/>	
+			<input type="button" value="Zaloguj" ng-click="logCtrl.tryLogin()"/>	
+		</div>
+		 <div class="login-loading" ng-show="logCtrl.loadingAppIndicator">
+			<div class="ajax-authentication-loader"></div>
+		</div>
+		
+		<div class="login-msg-error" ng-show="logCtrl.showLoginErrorMessage">
+			<p>Nieprawid³owy login lub has³o</p>
+		</div>
+		 

@@ -1,0 +1,36 @@
+<div class="dyn-table-container">
+
+			
+				<div class="dyn-table-header" ng-style="vm.dynTableHeaderStyle">
+					
+							<div class="dyn-table-header-content" ng-repeat="header in vm.headerRow">	
+								<span >{{header.title}}</span>
+							</div>
+
+				
+				
+				</div>
+			 	
+				<div class="table-body-info" ng-style="vm.dynTableHeaderStyle">
+					<dyn-record-view ng-repeat=  "item in exposeList"
+									 item-record="item"
+									 column-data="vm.headerRow"
+									 cancel-record="vm.cancelRecord()"
+									 remove-record="vm.removeRecord(item)"
+									 save-record="vm.saveRecord(item)"
+									 can-be-cancel="vm.canBeCancel(item)"
+									 can-be-modify="vm.canBeModify(item)"
+									 can-be-save="vm.canBeSave(item)"
+									 can-be-deleted="vm.canBeDeleted(item)"
+									 
+									 
+					></dyn-record-view>
+				</div>
+		 	 
+
+	
+	
+
+		
+	
+</div>

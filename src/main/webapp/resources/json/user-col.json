@@ -1,0 +1,50 @@
+[
+	{
+		"title":"Imie",
+		
+		"mapping":"name",
+		
+		"isEditable": 1
+	
+	},
+	
+	{
+	
+		"title":"Nazwisko",
+		
+		"mapping":"secondName",
+		
+		"isEditable": 1
+		
+	},
+	{
+	
+		"title":"Login",
+		
+		"mapping":"login",
+		
+		"isEditable": 1
+		
+	},
+	{
+		
+	
+		"title": "Uprawnienie",
+		
+		"mapping": "permissionName",
+		
+		"isEditable": 0
+		
+	},
+	{
+		
+	
+		"title": "Akcje",
+		
+		"mapping": "action",
+		
+		"isEditable": 0
+		
+	}
+
+]
