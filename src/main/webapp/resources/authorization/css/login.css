@@ -18,6 +18,7 @@ div.login-container{
 
 div.login-app-title{
 	position:absolute;
+
 	top: calc(50% - 35px);
 	left: calc(50% - 500px);
 	font-size:70px;
