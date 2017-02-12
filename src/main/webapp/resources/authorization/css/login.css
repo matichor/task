@@ -3,7 +3,6 @@ div.login-container{
 	position:absolute;
 	top:0px;
 	left:0px;
-
 	right:0px;
 	bottom:0px;
 	width:100%;
@@ -11,6 +10,7 @@ div.login-container{
 	background-image:url("../img/astrapark.jpg");
 	background-size: cover;
 	overflow-y: hidden;
+
 	z-index: 0
 z-index: 0
 }
