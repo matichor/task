@@ -1,8 +1,9 @@
-'use strict'
+﻿'use strict'
 
 authMod.controller('LoginController', ['AuthenticationUser', function(authenticationUser){
 	
 	var self = this;
+
 	
 	
 	self.tryLogin = function(){
