@@ -8,6 +8,7 @@ config(['$httpProvider', '$compileProvider', function($httpProvider,$compileProv
 	
     $httpProvider.defaults.timeout = 5000;
     
+/*test*/
     $httpProvider.useApplyAsync(true);
     
 }]);
